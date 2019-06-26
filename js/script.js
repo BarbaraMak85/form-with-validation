@@ -196,7 +196,7 @@ function sendForm(e) {
     e.preventDefault();
     const checkSendForm = document.querySelectorAll('input');
     const checkSendButton = document.querySelectorAll('input.success');
-    if (checkSendForm === checkSendButton) {
+    if (checkSendForm.length === checkSendButton.length) {
         const form = document.querySelector('form');
         form.submit();
     } else {
